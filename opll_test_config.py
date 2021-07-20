@@ -1,32 +1,3 @@
-
-############### DATABASE ACCESS INFORMATION ##################
-
-# ORACLE_INFO = 'hiraadmin/hira2018#@192.168.0.32:1521/orcl'
-OID = 'hiraadmin'
-OPW = 'hira2018#'
-OIP = '192.168.0.32'
-OPT = '1521'
-OSID =  'orcl'
-ORACLE_INFO = OID+'/'+OPW+'@'+OIP+':'+OPT+'/'+OSID
-
-
-############### DATA RETRIEVE INFORMATION ##################
-
-# "http://192.168.0.204:8080/dcm4chee-arc/aets/DCM4CHEE"
-DSIP = '192.168.0.204'
-DSPT = '8080'
-DCM_SERVER_URL = "http://" + DSIP + ':' + DSPT + "/dcm4chee-arc/aets/DCM4CHEE"
-
-RS_BASE_URL = DCM_SERVER_URL + "/rs"
-RS_HEADERS = { 'Accept': "application/dicom+json",
-               'cache-control': "no-cache"
-               }
-
-WADO_URL = DCM_SERVER_URL + "/wado"
-RETRIEVE_PATH = "/home/bjh/workplace/retrieve_test"
-RESPONSE_TIMEOUT = 10
-LABEL_IP = '192.168.0.204'
-
 ###  File setting ###
 DATA_FILE_TYPE = 'npy'
 HM_THRESHOLD_TYPE = 'fuzzy'         # fuzzy, mean, median, valley
